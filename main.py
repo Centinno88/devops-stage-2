@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from databases import Database
 
-DATABASE_URL = "postgresql://user:password@db:5432/database"
+DATABASE_URL = "postgresql://user:password@db/mydb"
+
 
 app = FastAPI()
 database = Database(DATABASE_URL)
